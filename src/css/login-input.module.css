@@ -1,0 +1,13 @@
+.loginInput {
+  background: transparent;
+  box-sizing: border-box;
+  width: 100%;
+  /* width: fit-content; */
+  height: 50px;
+  border: 2px solid var(--light-purple);
+  border-radius: 5px;
+  color: white;
+  padding: 0 20px;
+  font-family: var(--desc-font);
+  margin-bottom: 30px;
+}
