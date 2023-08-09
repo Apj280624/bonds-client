@@ -1,0 +1,72 @@
+/*styles.css */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10%; /* Added padding for the horizontal gaps */
+  margin-top: 100px;
+}
+
+.row {
+  display: flex;
+  gap: 30px; /* Adjust the gap between cards */
+}
+
+.card {
+  width: 250px;
+  height: 400px;
+  background-color: #1d3557;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.card__image {
+  width: 224px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.card__button {
+  margin-top: 30px;
+  height: 40px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: rgb(0,33,65);
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  /*color: #fff; */
+  background-color: #fff;
+  color: #a8dadc;
+}
+
+.horizontal-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.long-button {
+  width: 80%;
+  padding: 10px;
+  background-color: rgb(0, 33, 65);
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.long-button:hover {
+  /*color: #fff; */
+  background-color: #457b9d;
+  color: #fff;
+}

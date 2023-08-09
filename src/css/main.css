@@ -72,3 +72,7 @@ body {
   background-color: var(--dark-purple);
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+
+* {
+  font-family: "Montserrat";
+}

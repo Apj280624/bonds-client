@@ -7,11 +7,12 @@ import vars from "../utils/client_vars";
 
 import axios from "axios";
 
-// console.log(axios);
 
-console.log(vars.SERVER_ORIGIN);
 const RegisterPage = () => {
   const [creds, setCreds] = useState({ name: "", email: "", password: "" });
+
+  const role = window.location.href.split("/")[3];
+  // console.log(role);
 
   const handleCredsChange = (e) => {
     setCreds((prevCreds) => {
@@ -24,7 +25,7 @@ const RegisterPage = () => {
   const register = async () => {
     try {
       const response = await axios.post(
-        vars.SERVER_ORIGIN + "/api/user/register",
+        vars.SERVER_ORIGIN + "/api/" + role + "/register",
         creds
       );
       console.log(response);
